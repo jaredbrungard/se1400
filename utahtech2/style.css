@@ -1,0 +1,48 @@
+body {
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+}
+
+header h1 {
+    line-height: 140%;
+    padding: .5rem;
+}
+
+nav {
+    background-color: #F3F3F3;
+    font-weight: bold;
+}
+
+h2 {
+    color: #424242;
+    font-family: Georgia, serif;
+}
+
+dt {
+    color: #003058;
+    font-weight: bold;
+}
+
+.ut {
+    color: #BA1C21;
+    font-weight: bold;
+}
+
+footer {
+    font-size: .70rem;
+    font-style: italic;
+    text-align: center;
+}
