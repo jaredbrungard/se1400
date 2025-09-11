@@ -2,6 +2,7 @@ body {
     background: linear-gradient(to bottom, #eeeeee, #ffffff);
     background-attachment: fixed;
     font-family: Verdana, Arial, sans-serif;
+    margin: 0;
 }
 
 #wrapper {
@@ -18,15 +19,22 @@ header {
     background-color: #003058;
     color: #FFFFFF;
     font-family: Georgia, serif;
+    margin-left: 0;
 }
 
-header h1 {
+/* Modify the style rules for the h1 element selector. 
+Configure the utahtechlogo as a background-image that displays on the right (use background-position) and does not repeat. 
+Set its left padding to 1em. Configure a background-origin: content-box; 
+Add a "margin-bottom:0" to remove the space between the nav and header. 
+This is caused by the default margin applied to the h1 tag and we need to remove it. */
+h1 {
     background-image: url(utahtechlogo.svg);
     background-position: right;
     background-repeat: no-repeat;
     background-origin: content-box;
-    padding-left: 1em;
+
     margin-bottom: 0;
+    text-align: left;
 }
 
 nav {
@@ -41,7 +49,7 @@ nav a {
 }
 
 main {
-    padding-left: 2rem;
+    padding-left: 0rem;
     padding-right: 2rem;
 }
 
@@ -80,6 +88,7 @@ dt {
 #facultyhero {
     height: 300px;
     background-image: url(facultyhero.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
