@@ -1,15 +1,10 @@
 body {
-    background: linear-gradient(to bottom, #eeeeee, #ffffff);
-    background-attachment: fixed;
+    background-color: #FFFFFF;
+    color: #666666;
     font-family: Verdana, Arial, sans-serif;
-    margin: 0;
 }
 
 #wrapper {
-    background-color: #FFFFFF;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 0px 3px 3px rgba(66, 66, 66, .3);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -19,38 +14,16 @@ header {
     background-color: #003058;
     color: #FFFFFF;
     font-family: Georgia, serif;
-    margin-left: 0;
 }
 
-/* Modify the style rules for the h1 element selector. 
-Configure the utahtechlogo as a background-image that displays on the right (use background-position) and does not repeat. 
-Set its left padding to 1em. Configure a background-origin: content-box; 
-Add a "margin-bottom:0" to remove the space between the nav and header. 
-This is caused by the default margin applied to the h1 tag and we need to remove it. */
-h1 {
-    background-image: url(utahtechlogo.svg);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-
-    margin-bottom: 0;
-    text-align: left;
+header h1 {
+    line-height: 140%;
+    padding: .5rem;
 }
 
 nav {
     background-color: #F3F3F3;
     font-weight: bold;
-    padding: .5rem .5rem .5rem 2rem;
-
-}
-
-nav a {
-    text-decoration: none;
-}
-
-main {
-    padding-left: 0rem;
-    padding-right: 2rem;
 }
 
 h2 {
@@ -58,39 +31,9 @@ h2 {
     font-family: Georgia, serif;
 }
 
-h3 {
-    color: #003058
-}
-
 dt {
     color: #003058;
     font-weight: bold;
-}
-
-#homehero {
-    height: 300px;
-    background-image: url(homehero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-#studenthero {
-    height: 300px;
-    background-image: url(studenthero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-#facultyhero {
-    height: 300px;
-    background-image: url(facultyhero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .ut {
@@ -102,5 +45,4 @@ footer {
     font-size: .70rem;
     font-style: italic;
     text-align: center;
-    padding: 1rem;
 }
