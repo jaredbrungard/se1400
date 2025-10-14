@@ -23,7 +23,6 @@ header {
 
 header h1 {
     line-height: 140%;
-    padding: .5rem;
     background-image: url('utahtechlogo.svg');
     background-position: right;
     background-repeat: no-repeat;
@@ -49,6 +48,9 @@ h2 {
 
 h3 {
     color: #003058;
+}
+
+main {
     padding-left: 2rem;
     padding-right: 2rem;
 }
