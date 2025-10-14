@@ -20,6 +20,8 @@ header {
     background-color: #003058;
     color: #FFFFFF;
     font-family: Georgia, serif;
+    grid-row: 1 / 2;
+    grid-column: 2 / -2;
 }
 
 header h1 {
@@ -29,13 +31,20 @@ header h1 {
     background-repeat: no-repeat;
     padding-left: 1rem;
     background-origin: content-box;
-    margin-bottom: 0;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 nav {
     background-color: #F3F3F3;
     font-weight: bold;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
 }
 
 nav a {
@@ -54,30 +63,37 @@ h3 {
 main {
     padding-left: 2rem;
     padding-right: 2rem;
+    grid-row: 4 / 5;
+    grid-column: 2 / -2;
+    background-color: #ffffff;
+}
+
+main img {
+    float: right;
+    padding-left: 2rem;
+}
+
+#homehero,
+#studenthero,
+#facultyhero {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
 }
 
 #homehero {
-    height: 300px;
     background-image: url('homehero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #studenthero {
-    height: 300px;
     background-image: url('studenthero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #facultyhero {
-    height: 300px;
     background-image: url('facultyhero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 dt {
@@ -95,4 +111,6 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 1rem;
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
 }
