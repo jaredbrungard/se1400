@@ -107,6 +107,11 @@ main img {
     padding-left: 2rem;
 }
 
+video {
+    float: right;
+    margin-left: 2em;
+}
+
 #homehero,
 #studenthero,
 #facultyhero,
