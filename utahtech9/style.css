@@ -155,7 +155,18 @@ dt {
     font-weight: bold;
 }
 
-/* Form Styles */
+#shoppingcart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#shoppingcart img {
+    width: 100%;
+    height: auto;
+}
+
+
 form {
     display: grid;
     grid-template-rows: auto;
@@ -272,6 +283,10 @@ footer {
         height: auto;
     }
 
+    #shoppingcart {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
 }
 
@@ -304,5 +319,9 @@ footer {
 
     #mySubmit {
         grid-column: 1 / 2;
+    }
+
+    #shoppingcart {
+        grid-template-columns: 1fr;
     }
 }
