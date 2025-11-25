@@ -7,6 +7,16 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <script>
+        function validateForm() {
+
+            if (document.forms[0].myEmail.value == "") {
+                alert("Please enter an e-mail address.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 
 <body>
@@ -31,18 +41,16 @@
         <main>
             <h2>Join Alumni Mailing List</h2>
             <h3>Request Alumni Newsletter</h3>
+            <form method="post" onsubmit="return validateForm();" action="https://kearl.net/se1400/mail.php">
 
-            <p>Required information is marked with an asterisk (*).</p>
-            <form method="post" action="https://kearl.net/se1400/mail.php">
+                <label for="myFName">First Name:</label>
+                <input type="text" name="myFName" id="myFName">
 
-                <label for="myFName">*First Name:</label>
-                <input type="text" name="myFName" id="myFName" required>
+                <label for="myLName">Last Name:</label>
+                <input type="text" name="myLName" id="myLName">
 
-                <label for="myLName">*Last Name:</label>
-                <input type="text" name="myLName" id="myLName" required>
-
-                <label for="myEmail">*E-mail:</label>
-                <input type="email" name="myEmail" id="myEmail" required>
+                <label for="myEmail">E-mail:</label>
+                <input type="text" name="myEmail" id="myEmail">
 
                 <label for="myPhone">Phone:</label>
                 <input type="tel" name="myPhone" id="myPhone">
@@ -50,8 +58,8 @@
                 <label for="myGradDate">Graduation Date</label>
                 <input type="date" name="myGradDate" id="myGradDate">
 
-                <label for="myComments">*Comments:</label>
-                <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+                <label for="myComments">Comments:</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
 
                 <input type="submit" value="Submit" id="mySubmit">
 
